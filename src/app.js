@@ -9,5 +9,8 @@ connectDb();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to Ubiquiti API" });
+});
 app.use("/api/v1", router);
 app.set("port", 8000);
