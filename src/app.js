@@ -6,9 +6,9 @@ import router from "./routes/index.routes.js";
 import { PORT } from "./config/config.js";
 
 export const app = express();
-app.use(cors())
 connectDb();
 
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
