@@ -14,3 +14,5 @@ const validateEnv = (name) => {
 
 export const URI_DB_MONGO = validateEnv("URI_DB_MONGO");
 export const PORT = validateEnv("PORT");
+export const SECRET_KEY = validateEnv("SECRET_KEY");
+export const SECRET_IV = validateEnv("SECRET_IV");
